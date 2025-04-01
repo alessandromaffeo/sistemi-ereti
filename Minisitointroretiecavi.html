@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unità 5 - Riepilogo e Approfondimenti</title>
+
+    <style>
+        body {
+            font-family: 'Verdana', sans-serif;
+            margin: 30px;
+            padding: 30px;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #00796b;
+            font-size: 2.5rem;
+            text-align: center;
+        }
+
+        h2 {
+            color: #ff0606;
+            font-size: 1.8rem;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #790000;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        h2:hover {
+            background-color: #004d40;
+        }
+
+        .content {
+            display: none;
+            margin-top: 10px;
+            padding: 15px;
+            background-color: #e0f7fa;
+            border-radius: 8px;
+            font-size: 1rem;
+            line-height: 1.6;
+            transition: display 0.3s ease;
+        }
+
+        .content.visible {
+            display: block;
+        }
+
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+
+    <script>
+      
+        function showContent(element) {
+            var content = element.nextElementSibling;
+            content.classList.toggle("visible");
+        }
+    </script>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Unità 5 - Riepilogo e Approfondimenti</h1>
+
+        <h2 onmouseover="showContent(this)">Protocollo di Rete</h2>
+        <div class="content">
+            I protocolli di rete come TCP/IP, HTTP, HTTPS, FTP, SMTP, POP3, IMAP definiscono come i dispositivi comunicano tra loro attraverso Internet e reti locali.
+        </div>
+
+        <h2 onmouseover="showContent(this)">Modello OSI</h2>
+        <div class="content">
+            Il modello OSI descrive il processo di trasmissione dei dati in sette livelli, ognuno con funzioni specifiche per la comunicazione.
+        </div>
+
+        <h2 onmouseover="showContent(this)">Topologie di Rete</h2>
+        <div class="content">
+            Le topologie di rete definiscono la disposizione fisica o logica dei dispositivi in una rete. Esempi comuni sono Bus, Stella, Anello e Mesh.
+        </div>
+
+        <h2 onmouseover="showContent(this)">Indirizzamento IP</h2>
+        <div class="content">
+            L'indirizzamento IP permette di identificare univocamente ogni dispositivo in una rete tramite un indirizzo numerico, disponibile in versione IPv4 e IPv6.
+        </div>
+
+        <h2 onmouseover="showContent(this)">Sicurezza Informatica</h2>
+        <div class="content">
+            La sicurezza informatica protegge le reti e i sistemi da minacce come malware, attacchi hacker e furto di dati sensibili.
+        </div>
+
+        <h2 onmouseover="showContent(this)">Laboratorio: Creazione di un Cavo Ethernet</h2>
+        <div class="content">
+            1. Preparare il cavo<br>
+            2. Spellare i fili e disporli seguendo gli standard T568A o T568B<br>
+            3. Inserire i fili nei connettori RJ-45<br>
+            4. Crimpare i connettori e testare il cavo con un tester di rete
+        </div>
+
+        <h2 onmouseover="showContent(this)">Creazione di una Pagina Web HTML</h2>
+        <div class="content">
+            <pre>
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                    &lt;head&gt;
+                        &lt;title&gt;Benvenuto nel mio sito!&lt;/title&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        &lt;h1&gt;Ciao e benvenuto!&lt;/h1&gt;
+                    &lt;/body&gt;
+                &lt;/html&gt;
+            </pre>
+        </div>
+    </div>
+</body>
+
+</html>
